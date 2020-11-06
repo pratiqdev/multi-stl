@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import STLViewer from 'stl-viewer'
 
-function App() {
+export default class App extends React.Component {
+  
+render(){
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+      <h2>meep</h2>
+
+      <STLViewer
+        url='http://192.168.1.148:3005/content/deskLegFoot.stl'
+        width={400}
+        height={400}
+        modelColor='#B92C2C'
+        backgroundColor='#EAEAEA'
+        rotate={true}
+        orbitControls={true}
+      />
+
+    
+           
+
+
     </div>
   );
 }
+}
 
-export default App;
