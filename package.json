@@ -1,14 +1,18 @@
 {
   "name": "multi-stl",
+  "proxy": "http://192.168.1.148:3000/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
+    "filereader": "^0.10.3",
+    "jsdom": "^16.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "react-stl-obj-viewer": "^1.2.0",
     "stl-viewer": "^0.12.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
